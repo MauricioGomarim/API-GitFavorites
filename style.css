@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+
+  --color-header: rgba(4, 52, 68, 1);
+  --color-subtitle: #E1E1E6;
+  --bg-color: rgba(6, 22, 27, 0.5);
+  --color-border: #4A808C;
+  --color-remove: rgba(247, 90, 104, 1);
+
+}
+
+#app {
+
+  max-width: 1200px;
+
+  font-size: 1.6rem;
+
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 8.7rem;
+}
+
+.add {
+  display: flex;
+  gap: 8px;
+
+}
+
+.logo {
+  width: 100%;
+}
+
+.search input {
+  color: white;
+}
+
+.input {
+  width: 30vw;
+  height: 4.8rem;
+  padding: 1.6rem;
+
+  background: #06181C;
+  border-radius: 5px;
+  border: none;
+}
+
+.button img {
+  width: 24px;
+}
+
+.button {
+  cursor: pointer;
+  width: 20vw;
+  height: 4.8rem;
+  border-radius: 5px;
+  background-color: #065E7C;
+  color: white;
+
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  position: relative;
+}
+
+
+header .button:hover, .button:hover path {
+  background-color: white;
+  color: #065E7C;
+  fill: #065E7C;
+
+}
+
+
+
+body {
+  background-color: black;
+
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 25px;
+  overflow: hidden;
+
+}
+
+thead {
+
+  background-color: var(--color-header);
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  height: 6.4rem;
+}
+
+table td {
+  padding: 3%;
+}
+
+table td:last-child {
+  padding-left: 1%;
+}
+
+
+
+
+
+table th {
+  gap: 11px;
+  align-items: center;
+
+  padding: 2%;
+}
+
+
+.user img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+tr .user {
+  display: flex;
+
+}
+
+.user a {
+  text-decoration: none;
+}
+
+.user p {
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: white;
+}
+
+.user span {
+  font-weight: 400;
+  line-height: 3.2rem;
+  color: var(--color-subtitle);
+}
+
+.remove span {
+  overflow: hidden;
+  font-size: 100%;
+  color: var(--color-remove);
+  cursor: pointer;
+}
+
+tbody tr {
+  color: white;
+  background: var(--bg-color);
+
+}
